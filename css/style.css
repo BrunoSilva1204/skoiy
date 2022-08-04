@@ -257,9 +257,6 @@ body{
 }
 
 .move_img{
-    top: -20%;
-    left: 45% !important;
-    position: relative;
     width:132px;
     height: 138px;
 }
@@ -294,6 +291,17 @@ body{
     background-color: #0047BA;
     color: #FF6363;
     display: inline;
+}
+
+.margin_fix_1{
+    position: relative;
+    top: -112px;
+    left: -35px;
+}
+
+.margin_fix_2{
+    position: relative;
+    top: -100px;
 }
 
 @media (max-width: 767px) {
@@ -389,5 +397,8 @@ body{
     }
     .remove_height{
         height: 0;
+    }
+    .container_center_css{
+        margin-left: 30px;
     }
 }
