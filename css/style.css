@@ -2,6 +2,23 @@ body{
     overflow-x: hidden;
 }
 
+.arrow_background{
+    position: absolute;
+    left: 0px;
+    width: 110px;
+    height: 310px;
+    top: 195px;
+}
+
+.container.body {
+    max-width: 1440px;
+    padding: 0;
+}
+
+.body_content{
+    padding-left: 100px;
+}
+
 .font_inter_extrabold{
     font-family: 'Inter';
     src: url('Inter-ExtraBold.woff2') format('woff2'),
@@ -34,7 +51,6 @@ body{
     padding-right: 100px;
     width: 100%;
     height: 100px;
-    background-color: white;
 }
 
 .navbar_content_box_shadow{
@@ -45,7 +61,10 @@ body{
     margin-left: 10px;
     margin-right: 10px;
 }
-
+div#navbarSupportedContent {
+    background-color: white;
+    color: white;
+}
 .toggler_css{
     width: 24px;
     height: 18px;
@@ -61,6 +80,10 @@ body{
 
 .color_grey{
     color: #4D586C !important;
+}
+
+.color_grey_less_dark{
+    color: #B3B8C0 !important;
 }
 
 .color_white{
@@ -115,6 +138,10 @@ body{
     font-size: 48px;
 }
 
+.font_size_subscrive_title{
+    font-size: 48px;
+}
+
 .p-2{
     height:40px;
 }
@@ -125,10 +152,12 @@ body{
 
 .container_no_padding{
     padding-left: 0 !important;
+    margin-left:0;
+    margin-top: 100px;
 }
 
 .col_9_fix_padding{
-    padding-left: 11px !important;
+    padding-left: 10px !important;
 }
 
 .background_color{
@@ -156,6 +185,7 @@ body{
 .container_footer{
     height: 333px;
     background-color: #0047BA;
+    width: 100%;
 }
 
 .arrow{
@@ -166,8 +196,8 @@ body{
 
 .container_path{
     margin-top: 30px;
-    margin-bottom: 40px;
-    margin-left:90px;
+    margin-bottom: 30px;
+    margin-left:0px;
 }
 
 .container_navbar{
@@ -180,7 +210,6 @@ body{
 .container_center_css{
     height: 400px;
     margin-top: 150px;
-    margin-left: 50px;
     margin-bottom: 100px;
 }
 
@@ -263,6 +292,7 @@ body{
 
 .title_slide{
     width: 85%;
+    padding-left: 0;
 }
 
 .controls_slide{
@@ -299,18 +329,43 @@ body{
     left: -35px;
 }
 
-.margin_fix_2{
+.margin_fix_2 {
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    top: -100px;
+    padding-left: 120px;
+}
+.margin_fix_3{
     position: relative;
     top: -100px;
+    padding-left: 120px;
 }
 
-@media (max-width: 767px) {
-    .carousel-inner .carousel-item > div {
-        display: none;
-    }
-    .carousel-inner .carousel-item > div:first-child {
-        display: block;
-    }
+.advertising{
+    width: 300px;
+    height: 250px;
+    background-color: #E8E8E8;
+}
+.remove_height{
+    height: 0;
+}
+
+.display_view{
+    display: none;
+}
+
+div#navbarSupportedContent {
+    
+    color:white;
+}
+
+.color_nav_link{
+    color:#0047BA;
+}
+
+.display_view_none{
+    display: none;
 }
 
 .carousel-inner .carousel-item.active,
@@ -338,7 +393,20 @@ body{
   transform: translateX(0);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1439px) and (min-width:768px) {
+    .container body{
+        max-width: 768px;  
+    }
+    .arrow_background{
+        display: none;
+    }
+
+    .col_10_fix_padding{
+        padding-left: 10px;
+    }
+    .col_9_fix_padding{
+        padding-left: 50px !important;
+    }
     .navbar_content{
         padding-left: 50px;
         padding-right: 50px;
@@ -357,6 +425,8 @@ body{
         top: 0%;
         left: 0% !important;
         position: relative;
+        width: 131px;
+        height: 137px;
     }
     .container_footer{
         height: 396px;
@@ -386,19 +456,143 @@ body{
         position: relative;
         margin-left: 10px; 
         top: -125px;
+        padding-left: 0;
     }
     .margin_fix_3{
         position: relative;
         margin-left: 20px; 
-        top: -125px;  
+        top: -125px; 
+        padding-left: 0; 
     }
     .margin_fix_4{
         position: relative; 
     }
-    .remove_height{
-        height: 0;
-    }
     .container_center_css{
         margin-left: 30px;
     }
+    .container_path {
+        margin-left: 40px;
+    }
 }
+
+@media (max-width: 767px) {
+    .arrow_background{
+        display: none;
+    }
+    .carousel-inner .carousel-item > div {
+        display: none;
+    }
+    .carousel-inner .carousel-item > div:first-child {
+        display: block;
+    }
+    .container .body{
+        max-width: 355px;
+    }
+    .container_navbar{
+        position: static;
+    }
+    .display_view{
+        display: block;
+    }
+    .display_view_block{
+        display: none;
+    }
+    .navbar_content {
+        padding-left: 0px;
+        padding-right: 0px;
+        padding-top: 15px;
+        display: block;
+        height: 64px;
+        z-index: 0;
+        position: static;
+    }
+    .navbar_link{
+        height: 86px;
+        padding: 20px 0;
+        background-color: #0047BA;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    div#navbarSupportedContent{
+        margin-top: 15px;
+        height: 260px;
+    }
+    .controls_slide {
+        display: none;
+    }
+    .title_slide {
+        width: 100%;
+    }
+    .size_mobile{
+        font-size: 32px;
+    }
+    .container_center_css {
+        margin-top: 100px;
+        margin-left: 20px; 
+        width: 355px;
+    }
+    .img_profile_picture {
+        width: 160px;
+        height: 160px;
+    }
+    .color_nav_link{
+        color:white !important;
+        text-align: center;
+    }
+    .navbar-toggler{
+        float: right;
+        padding-top: 10px;
+    }
+    .navbar-brand{
+        padding-top: 10px;
+        margin-left: 20px;
+    }
+    .container_no_padding {
+        margin-top: 0;
+        padding-left: 20px !important;
+    }
+    .font_size_subscrive_title{
+        font-size: 33px;
+    }
+    .btn_enviar{
+        width: 350px;
+    }
+    .btn_enviar:disabled{
+        width: 350px;
+    }
+    .mensagem_erro{
+        display: none;
+    }
+    .container_footer{
+        height: 470px;
+        padding: 0;
+    }
+    .margin_fix_1 {
+        position: relative;
+        top: -80px;
+        left: -70px;
+    }
+    .margin_fix_2{
+        padding-left: 0;
+    }
+    .margin_fix_3{
+        width: 350px !important;
+        margin-left: -5px;
+        padding-left: 0;
+    }
+    .margin_fix_4{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 350px !important;
+    }
+    .container_form {
+        height: 470px !important;
+        max-width: 100%;
+        margin-left: 10px;
+        padding-top: 3%;
+    }
+    .display_view_none {
+        display: block;
+    }
+}
+
