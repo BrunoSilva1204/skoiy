@@ -393,6 +393,13 @@ div#navbarSupportedContent {
   transform: translateX(0);
 }
 
+@media (min-width:1440px){
+    .right_container{
+        position: relative;
+        top:0;
+    }
+}
+
 @media (max-width: 1439px) and (min-width:768px) {
     .container body{
         max-width: 768px;  

@@ -25,6 +25,24 @@
         window.onscroll = function(){
             active_box_shadow_menu();
         }
+        
+        var size_body = document.body.scrollWidth;
+        $(window).scroll(function() {
+            if(size_body <=1440){
+                if($(window).scrollTop() <= 500){
+                    $(".right_container").css({
+                      "top": ($(window).scrollTop()) + "px",
+                    });
+                }else{
+                    $(".right_container").css({
+                      "top": 500 + "px",
+                    });
+                }
+            }
+        });
+
+            
+
         let items = document.querySelectorAll(".carousel .carousel-item");
 
         items.forEach((el) => {
@@ -40,7 +58,7 @@
                 next = next.nextElementSibling
             }
         })
-
+        
     </script>
     </body>
 </html>
